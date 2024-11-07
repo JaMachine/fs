@@ -6,7 +6,7 @@ body {
 /* Адаптивные стили */
 @media (max-width: 600px) {
     body {
-        font-size: 16px;
+        font-size: 21px;
     }
     .container {
         width: 90%;
@@ -15,7 +15,7 @@ body {
 
 @media (min-width: 600px) {
     body {
-        font-size: 20px;
+        font-size: 27px;
     }
     .container {
         width: 80%;
