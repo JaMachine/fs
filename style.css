@@ -1,8 +1,0 @@
-.spoiler-content {
-    display: none;
-  }
-  
-  .spoiler-title:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }

@@ -1,0 +1,84 @@
+/* Сброс стилей для более предсказуемого поведения */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Стиль для картинки в header */
+.header-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Стили для заголовков и текста */
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Стили для кнопки спойлера */
+.spoiler-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.spoiler-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для видео (по умолчанию скрыты) */
+.spoiler-content {
+  display: none;
+  margin-top: 20px;
+}
+
+iframe {
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Стили для кнопок */
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:active {
+  background-color: #1e7e34;
+}

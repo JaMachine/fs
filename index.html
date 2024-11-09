@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Страница со спойлером</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="spoiler">
-    <h3 class="spoiler-title">Нажми, чтобы увидеть видео!</h3>
-    <div class="spoiler-content">
-      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BT4WzyT2g8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-  </div>
+    <!-- Картинка и текст -->
+    <header>
+        <img src="https://via.placeholder.com/800x300" alt="Картинка" class="header-image">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Здесь будет немного информации и интересных видео.</p>
+    </header>
 
-  <script src="engine.js"></script>
+    <!-- Спойлер с видео -->
+    <section>
+        <button class="spoiler-btn" onclick="toggleSpoiler()">Показать видео</button>
+        <div id="videoSpoiler" class="spoiler-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Кнопки -->
+    <section class="buttons">
+        <button onclick="window.location.href='https://example.com'">Перейти на другой сайт</button>
+        <button onclick="window.location.href='https://t.me/your_profile'">Перейти в Telegram</button>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
