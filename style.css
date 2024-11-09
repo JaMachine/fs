@@ -1,23 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-/* Адаптивные стили */
-@media (max-width: 600px) {
-    body {
-        font-size: 210px;
-    }
-    .container {
-        width: 90%;
-    }
-}
-
-@media (min-width: 600px) {
-    body {
-        font-size: 270px;
-    }
-    .container {
-        width: 80%;
-    }
-}
+.spoiler-content {
+    display: none;
+  }
+  
+  .spoiler-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
