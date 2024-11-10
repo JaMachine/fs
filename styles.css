@@ -63,40 +63,36 @@ p {
   border-radius: 8px;
 }
 
-/* Основной стиль для блока кнопок */
-.buttons {
+/* Стили для секции ссылок */
+.links {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
 }
 
-.button {
+.link {
   display: flex;
   align-items: center;
-  background-color: #28a745;
-  color: white;
-  padding: 10px 15px;
-  font-size: 1.1em;
-  border-radius: 5px;
   cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #218838;
+.link:hover {
+  color: #0056b3;
 }
 
-.button img {
+.link img {
   width: 24px; /* Размер значка */
   height: 24px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-.button span {
+.link span {
+  text-decoration: underline; /* Подчеркивание текста */
   font-size: 1em;
-  color: white;
 }
 
 /* Медиа-запросы для экранов меньше 768px */
