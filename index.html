@@ -10,8 +10,9 @@
     <!-- Картинка и текст -->
     <header>
         <img src="https://via.placeholder.com/800x300" alt="Картинка" class="header-image">
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <p>Здесь будет немного информации и интересных видео.</p>
+        <h1>Добро пожаловать!</h1>
+        <p>Что надо делать:
+            <br><br><br>Средняя 35<br>Минимальная 5<br>Максимальная неограничена </p>
     </header>
 
     <!-- Спойлер с видео -->
@@ -26,9 +27,16 @@
 
     <!-- Кнопки -->
     <section class="buttons">
-        <button onclick="window.location.href='https://example.com'">Перейти на другой сайт</button>
-        <button onclick="window.location.href='https://t.me/your_profile'">Перейти в Telegram</button>
+        <div class="button" onclick="window.location.href='https://example.com'">
+            <img src="images/redirect_icon.png" alt="Перейти на сайт">
+            <span>Перейти на сайт</span>
+        </div>
+        <div class="button" onclick="window.location.href='https://t.me/your_profile'">
+            <img src="images/telegram_icon.png" alt="Перейти в Telegram">
+            <span>Перейти в Telegram</span>
+        </div>
     </section>
+    
 
     <script src="script.js"></script>
 </body>
