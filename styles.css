@@ -54,7 +54,11 @@ p {
   margin-top: 20px;
 }
 
-iframe {
+.spoiler-content iframe {
+  width: 100%; /* Адаптивная ширина */
+  max-width: 560px; /* Ограничение максимальной ширины */
+  height: auto; /* Высота автоматически подстраивается */
+  aspect-ratio: 16 / 9; /* Сохраняет пропорции видео */
   margin: 10px 0;
   border-radius: 8px;
 }
@@ -81,4 +85,20 @@ button:hover {
 
 button:active {
   background-color: #1e7e34;
+}
+
+/* Медиа-запросы для экранов меньше 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em; /* Уменьшаем размер заголовка */
+  }
+
+  .spoiler-btn, .buttons button {
+    padding: 10px 15px; /* Сужаем кнопки */
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em; /* Уменьшаем размер текста */
+  }
 }
