@@ -8,8 +8,8 @@
 /* Основные стили для body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #e0e4cc; /* Цвет, напоминающий цвет доллара */
+  color: #333; /* Темный текст для хорошего контраста */
   text-align: center;
 }
 
