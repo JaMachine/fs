@@ -11,6 +11,18 @@ body {
   background-color: #e0e4cc;
   color: #333;
   text-align: center;
+  padding: 20px; /* Базовые отступы для мобильных */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Отступы по бокам на больших экранах */
+@media (min-width: 768px) {
+  body {
+    padding: 60px 90px; /* Увеличенные отступы для больших экранов */
+  }
 }
 
 /* Стиль для картинки в header */
@@ -24,10 +36,15 @@ body {
 /* Стили для заголовков и текста */
 .section-titles {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; /* Отступ между разделами */
+  justify-content: space-between;
+  gap: 20px;
   margin-top: 20px;
+  width: 100%;
+}
+
+.title-section {
+  flex: 1;
+  margin: 0 10px;
 }
 
 .title-section h1 {
@@ -38,11 +55,6 @@ body {
 .title-section p {
   font-size: 1em;
   line-height: 1.4;
-}
-
-/* Стили для центрального элемента */
-.title-section.center {
-  margin: 0 10px; /* Небольшой отступ с каждой стороны */
 }
 
 /* Стили для кнопки спойлера */
