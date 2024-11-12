@@ -11,11 +11,10 @@ body {
   background: url('images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #FFD700;
-  padding: 20px; /* Отступы со всех сторон */
-  margin: 0 auto; /* Центрирование содержимого */
-  max-width: 900px; /* Ограничение ширины страницы */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
   min-height: 100vh;
-  text-align: center; /* Центрирование текста */
 }
 
 /* Стили для header с короной и линиями */
@@ -24,29 +23,28 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
-  gap: 10px; /* Расстояние между короной и линиями */
+  gap: 10px;
 }
 
-/* Контейнер для короны и линий */
 .header-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* Основной отступ сверху для короны */
 }
 
-/* Линия по бокам от короны */
-.line-image {
-  height: 1px; /* Высота линии */
-  width: 1000%; /* Растягиваем линию до края контейнера */
-  background-color: gold; /* Цвет линии */
-  max-width: 200px; /* Ограничение ширины для визуальной настройки */
-  margin-top: 22px; /* Отступ сверху для линий */
+/* Линии по бокам от короны */
+.line {
+  height: 1px;
+  background-color: #FFD700;
+  flex-grow: 1;
+  max-width: 200px;
+  margin-top: 20px; /* Отступ сверху для линии */
 }
 
+/* Настройка короны */
 .crown-image {
-  max-height: 77px; /* Настройка высоты короны */
-  margin: 0 10px; /* Небольшие боковые отступы */
+  max-height: 77px;
+  margin: 0 10px;
 }
 
 /* Основные стили текста и секций */
@@ -162,18 +160,5 @@ body {
   .spoiler-btn {
     padding: 10px 15px;
     font-size: 1em;
-  }
-
-  .header-content {
-    flex-direction: column; /* Корона и линии подставляются вертикально */
-  }
-
-  .line-image {
-    width: 50%; /* Ограничение длины линии на мобильных устройствах */
-    margin-top: 10px; /* Отступ сверху */
-  }
-
-  .crown-image {
-    max-height: 60px; /* Уменьшение размера короны для мобильных устройств */
   }
 }
