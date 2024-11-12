@@ -12,8 +12,7 @@
         <img src="images/line.jpg" alt="Линия слева" class="line-image left-line">
         <img src="images/crown.png" alt="Корона" class="crown-image">
         <img src="images/line.jpg" alt="Линия справа" class="line-image right-line">
-      </header>
-      
+    </header>
 
     <!-- Основной контент -->
     <div class="section-titles">
@@ -21,7 +20,7 @@
             <h1>Мы ищем:</h1>
             <p>Вік: від 18 років.<br>Наявність: комп'ютера або смартфона з камерою та стабільним інтернет-з'єднанням.<br>Бажання: спілкуватися з людьми, бути в центрі уваги та розвиватися.<br>Англійська мова: базовий рівень буде перевагою.</p>
         </div>
-        <div class="title-section center">
+        <div class="title-section">
             <h1>Мы предлагаем:</h1>
             <p>Вік: від 18 років.<br>Наявність: комп'ютера або смартфона з камерою та стабільним інтернет-з'єднанням.<br>Бажання: спілкуватися з людьми, бути в центрі уваги та розвиватися.<br>Англійська мова: базовий рівень буде перевагою.<br><br>Средняя 35<br>Минимальная 5<br>Максимальная неограничена</p>
         </div>
@@ -53,6 +52,15 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleSpoiler() {
+            var spoilerContent = document.getElementById('videoSpoiler');
+            if (spoilerContent.style.display === 'none' || spoilerContent.style.display === '') {
+                spoilerContent.style.display = 'block';
+            } else {
+                spoilerContent.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
