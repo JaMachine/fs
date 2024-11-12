@@ -8,35 +8,52 @@
 /* Основные стили для body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e0e4cc;
-  color: #333;
-  text-align: center;
-  padding: 20px; /* Базовые отступы для мобильных */
-  min-height: 100vh;
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFD700; /* Светло-золотой цвет текста */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Отступы по бокам на больших экранах */
-@media (min-width: 768px) {
-  body {
-    padding: 60px 90px; /* Увеличенные отступы для больших экранов */
-  }
+/* Стили для header с короной и линиями */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px; /* Расстояние между короной и линиями */
 }
 
-/* Стиль для картинки в header */
-.header-image {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 10px;
+/* Контейнер для короны и линий */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Основной отступ сверху для короны */
 }
 
-/* Стили для заголовков и текста */
+/* Линия по бокам от короны */
+.line-image {
+  height: 1px; /* Высота линии */
+  width: 1000%; /* Растягиваем линию до края контейнера */
+  background-color: gold; /* Цвет линии */
+  max-width: 200px; /* Ограничение ширины для визуальной настройки */
+  margin-top: 22px; /* Отступ сверху для линий */
+}
+
+.crown-image {
+  max-height: 77px; /* Настройка высоты короны */
+  margin: 0 10px; /* Небольшие боковые отступы */
+}
+
+
+/* Основные стили текста и секций */
 .section-titles {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   margin-top: 20px;
   width: 100%;
@@ -109,12 +126,12 @@ body {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: #007bff;
+  color: #FFD700;
   transition: color 0.3s ease;
 }
 
 .link:hover {
-  color: #0056b3;
+  color: #FFEC8B;
 }
 
 .link img {
