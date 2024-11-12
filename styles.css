@@ -10,11 +10,10 @@ body {
   font-family: Arial, sans-serif;
   background: url('images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #FFD700; /* Светло-золотой цвет текста */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #FFD700;
+  padding: 20px; /* Отступы со всех сторон */
+  margin: 0 auto; /* Центрирование содержимого */
+  max-width: 900px; /* Ограничение ширины страницы */
   min-height: 100vh;
 }
 
