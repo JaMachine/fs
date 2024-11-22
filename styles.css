@@ -71,43 +71,43 @@ body {
   line-height: 1.4;
 }
 
-/* Стили для кнопки спойлера */
-.spoiler-btn {
-  background: linear-gradient(135deg, #4e9af1, #007bff);
-  color: white;
-  padding: 12px 25px;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.spoiler-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.spoiler-btn:active {
-  transform: scale(0.98);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Стили для видео (по умолчанию скрыты) */
-.spoiler-content {
-  display: none;
+/* Стили для секции видео */
+.videos {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
   margin-top: 20px;
 }
 
-.spoiler-content iframe {
+.video-item {
+  flex: 1;
+  max-width: 30%;
+}
+
+.video-item iframe {
   width: 100%;
-  max-width: 560px;
   height: auto;
   aspect-ratio: 16 / 9;
-  margin: 10px 0;
   border-radius: 8px;
+}
+
+/* Кнопка-ссылка для ПК */
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.see-more a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.see-more a:hover {
+  color: #FFEC8B;
 }
 
 /* Стили для секции ссылок */
@@ -157,8 +157,22 @@ body {
     font-size: 0.9em;
   }
 
-  .spoiler-btn {
-    padding: 10px 15px;
-    font-size: 1em;
+  /* Видео для мобильных устройств */
+  .videos {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .video-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .see-more {
+    justify-content: center;
+  }
+
+  .see-more a {
+    font-size: 1.2em;
   }
 }

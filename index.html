@@ -30,15 +30,23 @@
         </div>
     </div>
 
-    <!-- Спойлер с видео -->
-    <section>
-        <button class="spoiler-btn" onclick="toggleSpoiler()">Показать видео</button>
-        <div id="videoSpoiler" class="spoiler-content">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Секция видео для ПК -->
+    <section class="videos">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
+
+    <!-- Кнопка-ссылка для ПК -->
+    <div class="see-more">
+        <a href="https://www.youtube.com/channel/UCExample">Посмотреть еще</a>
+    </div>
 
     <!-- Ссылки с логотипами и текстом -->
     <section class="links">
@@ -52,15 +60,5 @@
         </div>
     </section>
 
-    <script>
-        function toggleSpoiler() {
-            var spoilerContent = document.getElementById('videoSpoiler');
-            if (spoilerContent.style.display === 'none' || spoilerContent.style.display === '') {
-                spoilerContent.style.display = 'block';
-            } else {
-                spoilerContent.style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>
