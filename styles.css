@@ -109,18 +109,17 @@ body {
 }
 
 .link {
-  display: flex;
+  display: inline-flex; /* Используем inline-flex для центрирования по содержимому */
   align-items: center;
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
   color: #FFD700;
   background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
-  padding: 15px; /* Увеличиваем размер кнопок */
+  padding: 15px 30px; /* Увеличиваем размер кнопок */
   font-size: 1.2em; /* Увеличиваем размер текста */
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: calc(50% - 20px); /* Ширина кнопок с учетом gap */
 }
 
 .link:hover {
@@ -178,11 +177,12 @@ body {
     gap: 10px;
     width: 100%; /* Добавляем ширину для кнопок */
     padding: 0 10px; /* Добавляем отступы */
+    text-align: center; /* Центрируем контейнеры для кнопок */
   }
 
   .link {
-    width: 100%;
-    text-align: center;
-    padding: 15px; /* Уменьшаем padding для кнопок на мобильных */
+    width: auto; /* Пусть кнопки занимают ширину контента */
+    display: inline-block; /* Пусть кнопки будут центроваться внутри родителя */
+    padding: 15px 20px; /* Уменьшаем padding для кнопок на мобильных */
   }
 }
