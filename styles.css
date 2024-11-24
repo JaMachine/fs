@@ -10,25 +10,12 @@ body {
   min-height: 100vh;
 }
 
-/* Стили для заголовков */
-h1 {
-  color: #FFD700; /* Золотой цвет для заголовков */
-}
-
-/* Стили для абзацев */
-p {
-  color: hwb(59 69% 0%); /* Белый цвет для абзацев */
-}
-
-/* Остальные стили остаются без изменений */
-
-/* Стили для header с короной и линиями */
+/* Убираем линии и сохраняем размещение короны */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
-  gap: 10px;
 }
 
 .header-content {
@@ -37,22 +24,12 @@ p {
   justify-content: center;
 }
 
-/* Линии по бокам от короны */
-.line {
-  height: 1px;
-  background-color: #FFD700;
-  flex-grow: 1;
-  max-width: 200px;
-  margin-top: 20px; /* Отступ сверху для линии */
-}
-
-/* Настройка короны */
 .crown-image {
   max-height: 77px;
   margin: 0 10px;
 }
 
-/* Основные стили текста и секций */
+/* Стили для секций */
 .section-titles {
   display: flex;
   justify-content: space-around;
@@ -64,17 +41,23 @@ p {
 .title-section {
   flex: 1;
   margin: 0 10px;
+  text-align: center; /* Центрируем текст внутри title-section */
 }
 
 .title-section h1 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  text-align: center; /* Центрируем h1 */
 }
 
 .title-section p {
   font-size: 1em;
   line-height: 1.4;
+  text-align: left; /* Выровняем p по левому краю */
+  color: #FFE4B5; /* Бледно-светло золотой цвет для абзацев */
 }
+
+/* Остальные стили остаются без изменений */
 
 /* Стили для секции видео */
 .videos {
