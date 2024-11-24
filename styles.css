@@ -1,21 +1,26 @@
-/* Сброс стилей для более предсказуемого поведения */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Основные стили для body */
 body {
   font-family: Arial, sans-serif;
   background: url('images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #FFD700;
+  color: #FFD700; /* Установим цвет по умолчанию */
   padding: 20px;
   margin: 0 auto;
   max-width: 900px;
   min-height: 100vh;
 }
+
+/* Стили для заголовков */
+h1 {
+  color: #FFD700; /* Золотой цвет для заголовков */
+}
+
+/* Стили для абзацев */
+p {
+  color: hwb(59 69% 0%); /* Белый цвет для абзацев */
+}
+
+/* Остальные стили остаются без изменений */
 
 /* Стили для header с короной и линиями */
 .header-container {
