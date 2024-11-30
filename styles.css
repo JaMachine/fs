@@ -164,6 +164,10 @@ body {
     margin-bottom: 20px;
   }
 
+  .video-item.hide-on-mobile {
+    display: none; /* Скрываем дополнительные видео на мобильных устройствах */
+  }
+
   .see-more {
     justify-content: center;
   }
