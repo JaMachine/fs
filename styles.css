@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background: url('images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-color: #39080e;
   color: #FFD700; /* Установим цвет по умолчанию */
   padding: 20px;
   margin: 0 auto;
